@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/ServerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set as server" />
+    <EditText
+        android:id="@+id/ServerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Input Server Name"
+        android:maxLength="20" />
+    <Button
+        android:id="@+id/ClientButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conect to server" />
+    <Button
+        android:id="@+id/KeyExchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="KeyExchange" />
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="120" />
+    <Button
+        android:id="@+id/ClientSendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="SendMessage" />
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/TextViewEncrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/AesKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

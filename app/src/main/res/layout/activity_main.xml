@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/BTMsgTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTMsgTest"
+            android:onClick="onClick"
+            android:layout_margin="4dp"
+            />
+        <Button
+            android:id="@+id/TestAesEncrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TestAesEncrypt"
+            android:onClick="onClick"
+            android:layout_margin="4dp"
+            />
+        <Button
+            android:id="@+id/AudioEncrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AudioEncrypt"
+            android:onClick="onClick"
+            android:layout_margin="4dp"
+            />
+        <EditText
+            android:id="@+id/source_content"
+            android:layout_width="wrap_content"
+            android:maxLines ="1"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:hint="Please input something"/>
+
+        <Button
+            android:id="@+id/encrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="encrypt"
+            android:onClick="onClick"
+            android:visibility="invisible"
+            android:layout_margin="4dp"
+            />
+
+        <Button
+            android:id="@+id/decrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="decrypt"
+            android:onClick="onClick"
+            android:visibility="invisible"
+            android:layout_margin="4dp"
+            />
+
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="加密后内容（Base64）"
+            android:visibility="invisible"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/encrypt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="解密后内容（Base64）"
+            android:visibility="invisible"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/decrypt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</ScrollView>

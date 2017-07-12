@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/chooseFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:onClick="onClick"
+            android:layout_margin="4dp"
+            />
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="test.mp3"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:onClick="onClick"
+            android:layout_margin="4dp"
+            />
+        <Button
+            android:id="@+id/encryptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="encrypt"
+            android:onClick="onClick"
+            android:layout_margin="4dp"
+            />
+
+        <Button
+            android:id="@+id/decryptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="decrypt"
+            android:onClick="onClick"
+            android:layout_margin="4dp"
+            />
+    </LinearLayout>
+</ScrollView>
