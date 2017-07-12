@@ -2,4 +2,4 @@
 
 AES and RSA Test code;
 
-Blooth communication
+Blue tooth communication
